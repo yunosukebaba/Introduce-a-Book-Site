@@ -1,0 +1,114 @@
+/*  平山夢明  */
+.nm {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 3vw;
+    color: #FFF;
+    top: 20vh;
+    left: 35vw;
+}
+
+/*  1961年、神奈川県生まれ。'96年、「SINKERー沈むもの」で小説家としてデビュー。  */
+.hb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 40vh;
+    left: 3vw;
+    line-height: 3.6vh;
+}
+
+/*  2006年には、「独白するユニバーサル横メルカトル」で第59回日本推理作家協会賞を受賞  */
+.hb2 {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 48vh;
+    left: 3vw;
+    line-height: 3.8vh;
+}
+
+/*  同作を表題作とした短編集が「このミステリーがすごい!」2007年版で第1位に輝くなど、高い評価を得た。  */
+.hb3 {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 56vh;
+    left: 3vw;
+    line-height: 4vh;
+}
+
+/*  数多くの連載を抱えながら、映画を始め、他メディアへも活躍の場を拡げている  */
+.hb4 {
+    position: absolute;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 63vh;
+    left: 3vw;
+    line-height: 4vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 10vh;
+    left: 44svw;
+}
+
+/*  --------------------------アニメーションの設定-------------------------------  */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.nm {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.hb {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.hb2 {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.hb3 {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.hb4 {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

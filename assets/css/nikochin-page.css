@@ -1,0 +1,235 @@
+/*  C10H14N2（ニコチン）と少年-乞食と老婆  */
+.ns {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 30vh;
+    left: 20vw;
+}
+
+/*  異様な雰囲気の街に暮らす「たろう」とホームレスの老人。  */
+.ih {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    bottom: 45vh;
+    left: 23vw;
+}
+
+/*  「たろう」はやがて街に染まっていく  */
+.tm {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    bottom: 38vh;
+    left: 30vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*  ぼっちゃんこの街は恐ろしい街だ  */
+.bo {
+    position: absolute;
+    width: 2.3vw;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.3vw;
+    color: #FFF;
+    right: 2vw;
+    line-height: 6.3vh;
+}
+
+/*  今日は一人、馘首にした。今日のは大物だ、ざっと一千万円は給料が節約できる  */
+.kk {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 2.5vh;
+    left: 4.5vw;
+    line-height: 2vh;
+}
+
+/*  狂っとる狂い尽くされておる  */
+.kt {
+    position: absolute;
+    width: 2.5vw;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    left: 1vw;
+    line-height: 6.8vh;
+}
+
+/*  こんな町にいてぼっちゃんほど心をもった子が育つというのはまさに奇蹟じゃな  */
+.ib {
+    position: absolute;
+    z-index: 3;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    left: 4.6vw;
+    bottom: 0vh;
+    line-height: 2vh;
+}
+
+/*  おまえ邪魔なんだよ  */
+.oj {
+    position: absolute;
+    width: 3.4vw;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 3.4vw;
+    color: #FFF;
+    top: 5vh;
+    right: 6vw;
+    line-height: 9vh;
+}
+
+/*  これから毎日お前を泣かす  */
+.ko {
+    position: absolute;
+    width: 2.5vw;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 5.6vh;
+    left: 6vw;
+    line-height: 6.5vh;
+}
+
+
+/* --------------------------アニメーションの設定------------------------------ */
+@keyframes slideIn-bottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.bo {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.ko {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-top {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.kt {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.oj {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-right {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.kk {
+    animation-name: slideIn-right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-left {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.ib {
+    animation-name: slideIn-left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.ns {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.ih {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.tm {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

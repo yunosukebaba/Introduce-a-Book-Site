@@ -1,0 +1,93 @@
+/*  ーーオペラントの肖像ーー  */
+.os {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #fff;
+    top: 30vh;
+    left: 35vw;
+}
+
+/*  オペラント（条件付け）という理論に基づき、人間の行動  */
+.oj {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 45vh;
+    left: 25vw;
+}
+
+/*  精神の管理・矯正が制度化された近未来では、、  */
+.sk {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 53vh;
+    left: 30vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*  本文  */
+.hb {
+    position: absolute;
+    z-index: 3;
+    font-family: 游教科書体;
+    color: #173B35;
+    font-size: 3vw;
+    writing-mode: vertical-rl;
+    right: 19vw;
+    line-height: 13vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*  --------------------------アニメーションの設定------------------------------- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.os {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.oj {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.sk {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

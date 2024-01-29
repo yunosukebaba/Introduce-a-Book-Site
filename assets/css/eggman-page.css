@@ -1,0 +1,95 @@
+/*  ーー卵男（エッグマン）ーー  */
+.em {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #fff;
+    top: 30vh;
+    left: 33vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*  現場で卵を食べることから「エッグマン」と呼ばれている連続殺人犯が逮捕され、奇妙な岩牢に連れ込まれることになった  */
+.gt {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 45vh;
+    left: 12vw;
+}
+
+/*  奇妙な岩牢に連れ込まれた。一ヶ月後、205号と名のる脆弱な男が隣の牢に入ることになり、、  */
+.nm {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 53vh;
+    left: 8vw;
+}
+
+/*  本文  */
+.hb {
+    position: absolute;
+    z-index: 3;
+    font-family: 游教科書体;
+    color: #173B35;
+    font-size: 2.8vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    right: 22vw;
+    line-height: 13vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ----------------------------アニメーションの設定------------------------ */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.em {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.gt {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.nm {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

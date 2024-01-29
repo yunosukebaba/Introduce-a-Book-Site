@@ -1,0 +1,268 @@
+/*  ーー独白するユニバーサル横メルカトルーー  */
+.dy {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 30vh;
+    left: 25vw;
+}
+
+/*  タクシー運転手である主人に長年仕えた1冊の道路地図帖。  */
+.hb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 45vh;
+    left: 23.5vw;
+}
+
+/*  彼が語る、主人とその息子のおぞましい所行とは  */
+.hb2 {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #FFF;
+    top: 52vh;
+    left: 27.5vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*  何が本来あるべき仕事かと申しますと是は  */
+.ns {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 0vh;
+    width: 2.5vw;
+    right: 2vw;
+    line-height: 4.8vh;
+}
+
+/*  遮蔽と誇張の二点に  */
+.sk {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 0vh;
+    width: 2.5vw;
+    right: 6vw;
+    line-height: 6vh;
+}
+
+/*  尽きると考えます  */
+.tk {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 0vh;
+    width: 2.5vw;
+    right: 10vw;
+    line-height: 6vh;
+}
+
+/* 私は小は道路地形から */
+.wd {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 0vh;
+    width: 2.5vw;
+    left: 10vw;
+    line-height: 6vh;
+}
+
+/*  大は島の位置までを  */
+.ds {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 0vh;
+    width: 2.5vw;
+    left: 6vw;
+    line-height: 6vh;
+}
+
+/*  網羅した単なる地図なのでございます  */
+.mt {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 0vh;
+    width: 2.5vw;
+    left: 2vw;
+    line-height: 5vh;
+}
+
+/*  それは三十センチ四方の皮膚でありました  */
+.ss {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    top: 0vh;
+    right: 7vw;
+    line-height: 5vh;
+}
+
+/*  女性の背中から頂いたのでしょう  */
+.ji {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 0vh;
+    left: 3vw;
+    line-height: 5vh;
+}
+
+
+/* -------------------------アニメーションの設定---------------------------- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.dy {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.hb {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.hb2 {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-bottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.ns {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.tk {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.ds {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-top {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.sk {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.wd {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.mt {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-right {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.ji {
+    animation-name: slideIn-right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-left {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.ss {
+    animation-name: slideIn-left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

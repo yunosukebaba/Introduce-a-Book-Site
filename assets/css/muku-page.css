@@ -1,0 +1,100 @@
+/*  ーー無垢の祈りーー  */
+.mi {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #fff;
+    top: 30vh;
+    left: 38vw;
+}
+
+/*  学校でいじめられ、家庭では義父の暴力に晒される少女が  */
+.gk {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #fff;
+    bottom: 45vh;
+    left: 23vw;
+}
+
+/*  絶望の果てに連続殺人鬼に救いを求める  */
+.zs {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #fff;
+    bottom: 38vh;
+    left: 31vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*
+殴りつけるように書く度、マジックの軸がざらついたスレートの壁で削れ、
+短くなった先を滑った爪が何度も当たる、やがて爪は割れ、血が腕を伝ったがふみは休むことなく描き続けた。
+"あいたい" "あいたい" "あいたい" "あいたい" "あいたい" "あいたい" "あいたい" "あいたい"
+*/
+.hb {
+    position: absolute;
+    z-index: 3;
+    font-family: 游教科書体;
+    font-size: 5.5vw;
+    color: #173B35;
+    top: 0vh;
+    bottom: 0vh;
+    line-height: 14vh;
+    margin: 0%;
+}
+
+
+
+
+/*  -------------------------アニメーションの設定------------------------------  */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.mi {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.gk {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.zs {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

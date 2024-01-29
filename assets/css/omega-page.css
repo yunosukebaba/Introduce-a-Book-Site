@@ -1,0 +1,195 @@
+/*  Ωの聖餐  */
+.os {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #fff;
+    top: 30vh;
+    left: 40vw;
+}
+
+/*  ある日、ネタ師（売人）の手伝いをして糊口をしのいでいた主人公は  */
+.hb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #fff;
+    top: 45vh;
+    left: 19vw;
+}
+
+/*  ヤクザが持ち込んだ遺体を処理する、腐りかけの象のような男「オメガ」の世話を命じられる  */
+.hb2 {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2vw;
+    color: #fff;
+    top: 53vh;
+    left: 8vw;
+}
+
+/*  ーTOPー  */
+.tb {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久明朝;
+    font-size: 2.5vw;
+    color: #FFF;
+    bottom: 21vh;
+    left: 44svw;
+}
+
+/*  まずその量はレアでいく  */
+.ms {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 3vw;
+    color: #FFF;
+    width: 3vw;
+    right: 2vw;
+    top: 0vh;
+    line-height: 8vh;
+}
+
+/*  ・・・お母さま。  */
+.ok {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 4vw;
+    color: #FFF;
+    top: -2vh;
+    left: 6vw;
+    line-height: 10vh;
+}
+
+/*  人間ほど薬品や金属で汚染された肉はないな  */
+.ny {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 3vw;
+    color: #FFF;
+    bottom: 0vh;
+    right: 8vw;
+    line-height: 5vh;
+}
+
+/*  いっそ私の代わりをしたらどうだ  */
+.iw {
+    position: absolute;
+    z-index: 4;
+    font-family: 游教科書体;
+    font-size: 2.5vw;
+    color: #FFF;
+    width: 2.5vw;
+    bottom: 0vh;
+    left: 2vw;
+    line-height: 6vh;
+}
+
+/*  ----------------------------アニメーションの設定--------------------------------- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.os {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.hb {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.hb2 {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-right {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.ny {
+    animation-name: slideIn-right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-left {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+.ok {
+    animation-name: slideIn-left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-top {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.ms {
+    animation-name: slideIn-top;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-bottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.iw {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

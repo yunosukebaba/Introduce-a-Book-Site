@@ -1,0 +1,269 @@
+/*  独白する  */
+.dh {
+    position: absolute;
+    z-index: 2;
+    width: 5vw;
+    font-family: Kai;
+    font-size: 5vw;
+    font-weight: normal;
+    color: #FFF;
+    top: 11vh;
+    right: 4vw;
+}
+
+/*  ユニバ｜サル  */
+.ys {
+    position: absolute;
+    z-index: 2;
+    width: 5vw;
+    font-family: Kai;
+    font-size: 5vw;
+    font-weight: normal;
+    color: #fff;
+    top: 11vh;
+    right: 10vw;
+}
+
+/*  横メルカトル  */
+.ym {
+    position: absolute;
+    z-index: 2;
+    width: 5vw;
+    font-family: Kai;
+    font-size: 5vw;
+    font-weight: normal;
+    color: #FFF;
+    top: 11vh;
+    right: 16vw;
+}
+
+/*  平山 夢明  */
+.nm {
+    position: absolute;
+    z-index: 2;
+    width: 4vw;
+    font-family: 游教科書体;
+    font-size: 4vw;
+    color: #FFF;
+    bottom: 0vh;
+    left: 5vw;
+}
+
+/*  第59回日本推理作家協会賞受賞  */
+.dn {
+    position: absolute;
+    z-index: 3;
+    height: 5vh;
+    font-family: 凸版文久見出し明朝;
+    font-size: 3.5vw;
+    color: #2E776C;
+    left: 1vw;
+}
+
+/*  「このミステリーがすごい!」2007年版第1位  */
+.km {
+    position: absolute;
+    z-index: 3;
+    height: 5vh;
+    font-family: 凸版文久見出し明朝;
+    font-size: 3.5vw;
+    color: #2E776C;
+    bottom: 0vh;
+    right: 1vw;
+}
+
+/*  限りなく残酷でいて、静謐な美しさを讃える、ホラー小説史に燦然と輝く奇跡の作品集  */
+.yl {
+    position: absolute;
+    z-index: 1;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.5vw;
+    color: #717600;
+    top: 44.5vh;
+    bottom: 53vh;
+    left: 1vw;
+}
+
+/*  C10H14N2（ニコチン）と少年-乞食と老婆  */
+.ns {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    top: 15vh;
+    left: 9vw;
+}
+
+/*  オペラントの肖像  */
+.os {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    top: 25vh;
+    left: 19vw;
+}
+
+/*  卵男（エッグマン）  */
+.em {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    bottom: 32vh;
+    right: 29vw;
+}
+
+/*  独白するユニバーサル横メルカトル  */
+.dy {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    bottom: 22vh;
+    left: 35vw
+}
+
+/*  怪物のような顔の女と溶けた時計のような頭の男  */
+.kt {
+    position: absolute;
+    z-index: 4;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    bottom: 11vh;
+    left: 24vw;
+}
+
+/*  Ωの聖餐  */
+.om {
+    position: absolute;
+    z-index: 4;
+    width: 2.3vw;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    top: 15vh;
+    right: 38vw;
+}
+
+/*  無垢の祈り  */
+.mi {
+    position: absolute;
+    z-index: 4;
+    width: 2.3vw;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    top: 25vh;
+    left: 43vw;
+}
+
+/*  すまじき熱帯  */
+.sn {
+    position: absolute;
+    z-index: 4;
+    width: 2.3vw;
+    font-family: 凸版文久見出し明朝;
+    font-size: 2.3vw;
+    color: #FFF;
+    top: 33vh;
+    left: 25vw;
+}
+
+
+
+/* -------------------------------------アニメーションの設定-------------------------------------- */
+@keyframes slideIn-right {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+.ns {
+    animation-name: slideIn-right;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+.em {
+    animation-name: slideIn-right;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+.kt {
+    animation-name: slideIn-right;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-left {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+.os {
+    animation-name: slideIn-left;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+.dy {
+    animation-name: slideIn-left;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-bottom {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.om {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+.sn {
+    animation-name: slideIn-bottom;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn-top {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+.mi {
+    animation-name: slideIn-top;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
